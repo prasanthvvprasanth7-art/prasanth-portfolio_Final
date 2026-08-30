@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+
+body {
+  @apply bg-mist-50 text-ink-900 dark:bg-ink-950 dark:text-mist-100;
+  font-feature-settings: "cv11","ss01";
+}
+
+::selection { background: rgba(62,207,207,0.28); }
+
+::-webkit-scrollbar        { width: 8px; }
+::-webkit-scrollbar-track  { @apply bg-transparent; }
+::-webkit-scrollbar-thumb  { @apply rounded-full bg-mist-300 dark:bg-ink-600; }
+
+/* ── utilities ─────────────────────────────────────────────────────────── */
+.section-container { @apply mx-auto w-full max-w-6xl px-5 sm:px-8 lg:px-10; }
+
+.glass       { @apply border border-white/10 bg-white/[0.04] backdrop-blur-xl; }
+.glass-light { @apply border border-ink-900/[0.06] bg-white/70 backdrop-blur-xl
+               dark:border-white/10 dark:bg-white/[0.04]; }
+
+.text-gradient { @apply bg-gradient-to-r from-geo-teal via-geo-blue to-geo-green bg-clip-text text-transparent; }
+.kicker        { @apply font-display text-[11px] font-semibold uppercase tracking-[0.25em] text-geo-teal; }
+
+.card { @apply rounded-2xl border border-ink-900/[0.06] bg-white shadow-sm
+        transition-all duration-300
+        dark:border-white/[0.08] dark:bg-ink-800/60; }
+
+.btn-primary   { @apply inline-flex items-center justify-center gap-2 rounded-full
+                 bg-ink-900 px-6 py-3 text-sm font-semibold text-white
+                 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg
+                 dark:bg-geo-teal dark:text-ink-950; }
+
+.btn-secondary { @apply inline-flex items-center justify-center gap-2 rounded-full
+                 border border-ink-900/[0.15] bg-transparent px-6 py-3 text-sm font-semibold
+                 text-ink-900 transition-all duration-300 hover:-translate-y-0.5
+                 dark:border-white/[0.15] dark:text-mist-100; }
+
+.noise-overlay { @apply pointer-events-none fixed inset-0 z-[1] bg-grain; }
+
+/* System font stack (Google Fonts loaded via <link> in deployed HTML or CDN) */
+body { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif; }
+.font-display { font-family: "Sora", "Segoe UI", system-ui, sans-serif; }
