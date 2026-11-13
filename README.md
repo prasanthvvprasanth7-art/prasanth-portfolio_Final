@@ -11,23 +11,6 @@ npm run build      # Production build
 npm start          # Serve production build
 ```
 
-## 🌐 Deploy to Vercel (recommended — free)
-
-1. Push this folder to a GitHub repo.
-2. Go to [vercel.com](https://vercel.com) → **New Project** → Import your repo.
-3. Click **Deploy** — zero config needed.
-4. Set your custom domain in Vercel project settings.
-
-## 🌐 Deploy to Netlify
-
-1. `npm run build` → `.next` folder generated.
-2. Push to GitHub, connect repo in [netlify.com](https://netlify.com).
-3. Build command: `npm run build` | Publish dir: `.next`
-4. Install the **@netlify/plugin-nextjs** plugin in Netlify UI.
-
-## ✏️ Customising Your Content
-
-All portfolio data lives in **one file**: `lib/data.ts`
 
 | What to change | Where |
 |---|---|
