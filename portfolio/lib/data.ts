@@ -4,7 +4,7 @@
 export const profile = {
   name: "Prasanth V",
   initials: "PV",
-  title: "GIS Engineer & remote sensing specialist",
+  title: "GIS Engineer & Remote Sensing Specialist",
   subtitle: "Remote Sensing · Spatial Analysis · Environmental Mapping",
   tagline: "Decoding the Earth — one spatial dataset at a time.",
   summary:
